@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-core@2.1.0/dist/tf-core.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-converter@2.1.0/dist/tf-converter.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.1.0/dist/tf-backend-webgl.js"></script>
+    <script defer src="https://unpkg.com/@tensorflow-models/handpose@0.0.6/dist/handpose.js"></script>
+
+    <script defer src="./src/knear.js"></script>
+
+    <script defer type="module" src="./src/index.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Handpose</title>
+</head>
+<body>
+
+    <hr>
+    <h2 class="header">Handpose</h2>
+    <hr>
+    <br>
+
+    <div id="container">
+        <canvas id="output" ></canvas>
+        <video id="video" playsinline ></video>
+    </div>
+    <br>
+
+    <!-- <input type="text" placeholder="Handhouding naam" id="poseInput"> -->
+    <label for="poseInput">Kies Handhouding:</label>
+    <select name="poseInput" id="poseInput">
+        <option value="hello">Zwaaien</option>
+        <option value="fist">Vuist</option>
+        <option value="thumbsUp">Duim omhoog</option>
+        <option value="thumbsDown">Duim omlaag</option>
+        <option value="middleFinger">Middelvinger</option>
+        <option value="swag">Swag</option>
+        <option value="peace">Peace</option>
+        <option value="rock">Rocken</option>
+        <option value="gun">Pistool</option>
+        <option value="starTrek">Star Trek begroeting</option>
+    </select>
+    <button class="button" id="trainButton">Train de machine</button>
+    <button class="button" id="predictButton">Voorspel de handhouding</button>
+    <br>
+
+    <section id="prediction" class="prediction">
+    </section>
+    <br>
+
+    <h2>Landmarks array voor KNN ⬇️</h2>
+    <div id="array">e</div>
+    <br>
+
+    <hr>
+    <footer>
+        <p>Deze website is gemaakt door Aiden Deighton, student Creative Media & Game Technologies aan de Hogeschool Rotterdam.</p>
+        <div class="socials">
+            <div><a href="mailto:1025660@hr.nl">E-mail</a></div>
+            <div><a href="https://www.instagram.com/aiddei/" target="_blank">Instagram</a></div>
+            <div><a href="https://nl.linkedin.com/in/aiden-deighton-081669234?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></div>
+            <div><a href="https://github.com/AIDDEI/" target="_blank">GitHub</a></div>
+        </div>
+        <p id="copyright">© 2023 - Aiden Deighton</p>
+    </footer>
+    <hr>
+
+</body>
+</html>

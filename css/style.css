@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#array {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(1, 1, 127);
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    min-height: 20px;
+    width: 720px;
+    word-wrap: break-word;
+}
+
+.header {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 1, 127);
+    padding: 15px;
+    border: 5px solid rgb(159, 217, 238);
+}
+
+hr {
+    border: 2px solid rgb(159, 217, 238);
+}
+
+.button {
+    background-color: rgb(159, 217, 238);
+    padding: 8px 12px;
+    margin: 4px;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(1, 1, 127);
+    color: rgb(255, 255, 255);
+}
+
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.imageContainer {
+    height: 250px;
+    width: 250px;
+    border: 5px solid rgb(1, 1, 127);
+    margin: auto;
+}
+
+/*Footer*/
+footer {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(159, 217, 238);
+    border: 5px solid rgb(1, 1, 127);
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials div {
+    padding: 20px;
+}
+
+#copyright {
+    font-size: 12px;
+}
+
+.prediction {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 1, 127);
+    margin: auto;
+    width: 720px;
+    word-wrap: break-word;
+}
