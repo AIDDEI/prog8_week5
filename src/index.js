@@ -18,7 +18,7 @@ predictButton.addEventListener("click", predictPose);
 
 let predictionPlaceholder = document.getElementById("prediction");
 let p = document.createElement("p");
-p.innerHTML = "Train het model op de verschillende handhoudingen en laat het erna je handhouding voorspellen!"
+p.innerHTML = "Train het model op de verschillende handhoudingen en laat het erna je handhouding voorspellen!";
 predictionPlaceholder.appendChild(p);
 
 // Start the application
